@@ -25,7 +25,7 @@ function statusBody (request, response) {
 function updateBody (request, response) {
     let bodyResult = request.body.values;
     state.push(bodyResult);
-    response.send(bodyResult);
+    response.send(state);
 };
 
 
